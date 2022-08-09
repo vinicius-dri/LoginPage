@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2848add040.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Login-Helper</title>
+  </head>
+  <body>
+    <header>
+      <h1>Login-Helper</h1>
+    </header>
+    <main>
+      <form>
+        <section class="input-container">
+          <p>Função em JS para esconder ou visualizar a senha</p>
+          <input type="email" id="field-email" placeholder="Digite seu email" />
+          <div class="password-container">
+            <input
+              type="password"
+              id="field-password"
+              placeholder="*********"
+            />
+            <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+            <i
+              class="fa-solid fa-eye-slash"
+              id="eyeslash"
+              onclick="showPassword()"
+            ></i>
+          </div>
+        </section>
+
+        <section class="password-infos">
+          <div>
+            <input type="checkbox" />
+            <span>Lembrar senha?</span>
+          </div>
+          <a href="#">Esqueceu sua senha?</a>
+        </section>
+        <button id="btn-login">Login</button>
+        <span id="result">
+          <div id="msg-logado"></div>
+        </span>
+        <section class="links-container">
+          <span>Ou entre com:</span>
+          <aside>
+            <a href="#"
+              ><i class="fa-brands fa-square-google-plus google"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            <a href="#"
+              ><i class="fa-brands fa-square-facebook facebook"></i
+            ></a>
+          </aside>
+        </section>
+        <footer>
+          <hr />
+          <span>Ainda não tem uma conta? <a href="#">Cadastre-se</a></span>
+          <br />
+          <span id="footer-rights"
+            >&copy; <i> Drimer Automação de Sistemas</i></span
+          >
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>
